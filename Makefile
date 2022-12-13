@@ -7,3 +7,6 @@ build:
 	gcc -o openssl_init $(CFLAGS) $(LDFLAGS) $(LDLIBS) openssl_init.c
 clean:
 	rm -f openssl_init
+# check shared libs linking (MacOS)
+check:
+	otool -L openssl_init
