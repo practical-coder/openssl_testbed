@@ -1,3 +1,6 @@
+// Usage: digest <input_file>
+// Output compatible with openssl dgst -sha3-256 <input_file>
+
 #include <openssl/evp.h>
 
 #include <stdio.h>

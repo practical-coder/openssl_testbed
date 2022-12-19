@@ -10,7 +10,7 @@ init:
 digest:
 	$(CC) -o digest $(CFLAGS) $(LDFLAGS) $(LDLIBS) digest.c
 clean:
-	rm -f openssl_init
+	rm -f digest openssl_init
 # check shared libs linking (MacOS)
 check:
 	otool -L openssl_init
